@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Small Notification</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="/Leccion - 03/js/lib/jquery-2.1.4.min.js"></script>
+	
+	<script src="/Leccion - 03/js/lib/smallNoti.js"></script>
+
+	<script src="/Leccion - 03/js/lib/TweenMax.min.js"></script>	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="/Leccion - 03/css/bootstrap.min.css"> 
+
+	<link rel="stylesheet" href="/Leccion - 03/css/smallBox.css">
+
+	<link rel="stylesheet" href="/font_awesome/css/font-awesome.css">
+	<!-- Importación de Font Awesome -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> -->
+
+</head>
+<body>
+
+<!-- <div class="smallBox_contenedor">
+	<div class="smallBox_foto">
+		<img src="/Leccion - 03/img/foto.jpg" alt="img" >
+	</div>
+	<div class="smallBox_contenido" aling="center">
+		<div class="smallBox_textoContenedor">
+			<span class="smallBox_titulo">Al aire</span>
+			<span class="smallBox_subtitulo">La voz de Colombia en vivo</span>
+		</div>
+		<div class="smallBox_pico"></div>		
+		<div class="smallBox_cajaColor">
+			<div class="smallBox_colorTexto">				
+				<i class="fa fa-camera-retro fa-1x"></i> Karen Melissa 
+			</div>			
+			<div class="smallBox_colorIcon">
+				<i class="fa-regular fa-envelope fa-2x"></i>
+			</div>
+		</div>			
+		<div class="smallBox_sombra">				
+		</div>
+	</div>	
+</div> -->
+
+
+<div class="container">	
+	<h1>Small: <small>Notification</small></h1>
+	<hr>
+</div>
+
+<script >
+		
+		$(window).ready( function() { 
+
+			$.smallBox({
+
+				titulo: "Titulo",
+				subtitulo: "Subtitulo", 
+				contenido: "Este es el contenido de mi pagina",
+				img: "/Leccion - 03/img/DZ.png",
+
+			});
+/* 
+            $.bigBox( {
+
+				fa: "fa-solid fa-gears",
+				titulo: "Desde botón",
+				contenido: "Este es el contenido del bigBox.",
+				boton: "Ingresar a Udemy"
+
+			}, function( boton ){
+				console.log(boton)
+			}); */
+        });
+
+	</script>
+
+</body>
+</html>

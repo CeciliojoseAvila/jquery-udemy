@@ -1,0 +1,73 @@
+
+.divPreloader{
+  position: absolute;
+  opacity: 0.4;
+}
+
+dl {
+  width: 400px;
+}
+
+dd{
+    margin: 0px;
+    padding: 10px;    
+}
+
+dt {
+   cursor: pointer;
+   font-size: 18px;
+   background-color: #e3e3e3;
+   border-bottom: 1px solid #c5c5c5;
+   border-top: 1px solid white;
+
+}
+
+h3 {
+    cursor: pointer;
+}
+
+.form-group{
+  position: relative;
+  top: -150px;
+}
+
+@media (max-width: 1000px) {
+  .form-group{
+    top: -50px;
+  }
+}
+
+/*TIENDA DE ROPA*/
+.imgThumb {
+  display: block;
+  cursor: pointer;
+}
+
+
+.imgRating {
+  width: 30px;
+  height: 30px;
+}
+
+/* ANIMACIONES: */
+
+.cajaRoja {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  float: left;
+  margin-right: 10px;
+
+}
+
+.cajaAzul {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  float: left;
+  margin-right: 10px;
+
+}
+

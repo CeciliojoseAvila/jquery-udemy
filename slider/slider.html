@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Slider</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="/Leccion - 03/js/lib/jquery-2.1.4.min.js"></script>
+	<script src="/Leccion - 03/js/lib/TweenMax.min.js"></script>	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="/Leccion - 03/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/Leccion - 03/css/slider.css">
+	
+</head>
+<body>
+
+
+<div class="container" align="center">
+	
+	<h1>Slideshow</h1>
+	<hr>
+<div class="slideShow">
+<!-- 	<ul>
+		<li><img src="/Leccion - 03/img/slide1.png"/> </li>
+		<li><img src="/Leccion - 03/img/slide2.png"/> </li>
+		<li><img src="/Leccion - 03/img/slide3.png"/> </li>
+		<li><img src="/Leccion - 03/img/slide4.png"/> </li>
+	</ul> -->
+</div>	
+
+<!-- 	<div class="slideShowButtons">
+		<div data-idx="0" class="slideButton"></div>
+		<div data-idx="1" class="slideButton"></div>
+		<div data-idx="2" class="slideButton"></div>
+		<div data-idx="3" class="slideButton"></div>
+	</div> -->
+<!-- <button data-mov="ant" class="btn btn-primary botSlide">Anterior</button>
+	<button data-mov="sig" class="btn btn-primary botSlide">Siguiente</button> -->
+	<br><br>
+
+	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, quibusdam fugit, dignissimos animi est blanditiis aut quia optio eligendi expedita perferendis esse culpa! Nam commodi ut similique quaerat nesciunt omnis.
+
+</div>
+
+	<script src="/Leccion - 03/js/slideShow.js"></script>	
+
+	<script> 
+
+	 	$.slideShow({
+
+			slides: ['/Leccion - 03/img/slide1.png', '/Leccion - 03/img/slide2.png', '/Leccion - 03/img/slide3.png', '/Leccion - 03/img/slide4.png'],
+			intervalo: 2000,
+			velocidad: 1200,
+			color: "green"
+		});
+
+	</script>	
+
+</body>
+</html>

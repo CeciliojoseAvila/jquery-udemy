@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Big Box</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="/Leccion - 03/js/lib/jquery-2.1.4.min.js"></script>
+
+	<script src="/Leccion - 03/js/lib/TweenMax.min.js"></script>	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="/Leccion - 03/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="/Leccion - 03/css/bigBox.css">
+
+	<link rel="stylesheet" href="/font_awesome/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<div class="bigBox_fondo"> </div>
+
+<!-- <div class="bigBox_contenedor" align="center">
+<div class="bigBox_cerrar"><i class="fa fa-times"> </i></div>
+<div class="bigBox_circulo"> <i class="fa-regular fa-thumbs-up fa-3x"> </i></div>
+
+<div class="bigBox_contenido">
+	<span class="bigBox_titulo">Genial!!</span>
+	<span class="bigBox_texto">Estamos listos para proceder usando Udemy</span>
+
+</div>
+	<button class="bigBox_Boton">Empezar el curso</button>
+</div> -->
+
+<div class="container">	
+	<h1>BigBox: <small>Notification</small></h1>
+
+	<button class="btn btn-primary">Mostrar BigBox</button>
+
+	<hr>
+</div>
+
+	<script src="/Leccion - 03/js/lib/bigBox.js"> </script>	
+
+	<script >
+		
+		$("button").on("click", function() { 
+
+            $.bigBox( {
+
+				fa: "fa-thumbs-up",
+				titulo: "Desde botón",
+				contenido: "Este es el contenido del bigBox.",
+				boton: "Ingresar a Udemy"
+
+			}, function( boton ){
+				console.log(boton)
+			});
+        })
+
+	</script>	
+
+
+</body>
+</html>

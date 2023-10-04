@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Lección 03 - Eventos</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<style>
+		.img100{
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+
+
+</head>
+<body>
+
+
+<div class="container">
+	
+	<h1>Lección 03: Eventos</h1>
+	<hr>
+	<button id="bot1" class="btn btn-primary">Evento click</button >
+
+	<br><br>
+	<img src="img/profesor.jpg" class="img100"/>
+</div>
+
+<script>
+
+	$("#bot1").on("click",function(){
+		console.log("click!");
+	});
+
+	$(".img100").on("mouseenter",function(){
+
+		$(this).attr("src","img/nophoto.jpg");
+
+	});
+
+	$(".img100").on("mouseleave",function(){
+
+		$(this).attr("src","img/profesor.jpg");
+
+	});
+
+</script>
+
+
+
+</body>
+</html>

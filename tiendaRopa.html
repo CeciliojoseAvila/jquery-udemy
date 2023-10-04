@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Tienda de Ropa</title>
+	<!-- Importacion del jQuery -->
+	<script src="/Leccion - 03/js/lib/jquery-2.1.4.min.js "></script>	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="/Leccion - 03/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="/Leccion - 03/css/tiendaRopa.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	
+	<h1>Tienda de Ropa: <small>Fernando's</small></h1>
+	<hr>
+
+	<div class="row">
+
+		<div class="col-sm-2">
+		    <section class="panel">
+		        <div class="panel-body">
+
+					
+					<!-- Agrega el atributo data-precio con el precio correspondiente para cada imagen -->
+					<img data-color="blanca" data-precio="10.000" src="/Leccion - 03/img/camiseta/thumbs/blanca.jpg" class="imgThumb img-thumbnail">
+
+					<img data-color="gris" data-precio="15.000" src="/Leccion - 03/img/camiseta/thumbs/gris.jpg" class="imgThumb img-thumbnail">
+
+					<img data-color="negra" data-precio="20.000" src="/Leccion - 03/img/camiseta/thumbs/negra.jpg" class="imgThumb img-thumbnail">
+
+					<img data-color="rojo" data-precio="25.000" src="/Leccion - 03/img/camiseta/thumbs/rojo.jpg" class="imgThumb img-thumbnail">
+
+					<img data-color="rosa" data-precio="30.000" src="/Leccion - 03/img/camiseta/thumbs/rosa.jpg" class="imgThumb img-thumbnail">
+
+					<img data-color="verde" data-precio="35.000" src="/Leccion - 03/img/camiseta/thumbs/verde.jpg" class="imgThumb img-thumbnail">
+
+		        </div>
+		    </section>
+		</div>
+
+		<div class="col-sm-5">
+		    <section class="panel">
+		        <div class="panel-body">
+					
+					<img id="vistaPrevia" src="/Leccion - 03/img/camiseta/large/blanca.jpg">
+
+		        </div>
+		    </section>
+		</div>
+
+		<div class="col-sm-4">
+		    <section class="panel">
+		        <div class="panel-body">
+					<h2>Camiseta Especial <small id="lblColor">blanca</small></h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum provident doloremque ipsam beatae neque quo saepe voluptatibus, sunt hic delectus nam perspiciatis ut atque, minus minima, rem reiciendis dolor harum!.
+						<br>
+						<br>
+					</p>
+					<p>
+						<h4>Rating</h4>
+						<img src="/Leccion - 03/img/star1.png" class="imgRating">
+						<img src="/Leccion - 03/img/star1.png" class="imgRating">
+						<img src="/Leccion - 03/img/star1.png" class="imgRating">
+						<img src="/Leccion - 03/img/star1.png" class="imgRating">
+						<img src="/Leccion - 03/img/star2.png" class="imgRating">
+						<br>
+						<br>
+					</p>
+					<p>
+						<h3>Precio <small id="precioProducto">$10.000</small></h3>
+					</p>
+
+		        </div>
+		    </section>
+		</div>
+
+	</div>
+
+</div>
+
+
+<script>
+	
+(function(){
+
+	$(".imgThumb").on("mouseover",function(){
+
+		var color = $(this).data('color');
+		var precio = $(this).data('precio'); // Obtiene el precio del atributo data-precio
+		var url   = "/Leccion - 03/img/camiseta/large/"+ color +".jpg";
+		
+		$("#vistaPrevia").attr('src', url);
+		$("#lblColor").text( color );
+		$("#precioProducto").text("$" + precio); // Cambia el precio en el elemento con id "precioProducto"
+
+	});
+
+})();
+
+</script>
+</body>
+</html>

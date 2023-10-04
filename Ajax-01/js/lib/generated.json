@@ -1,0 +1,40 @@
+{
+  "isActive": false,
+  "balance": "$2,422.03",
+  "picture": "http://placehold.it/100x100",
+  "age": 34,
+  "eyeColor": "brown",
+  "name": "Chrystal Pate",
+  "gender": "female",
+  "company": "UBERLUX",
+  "email": "chrystalpate@uberlux.com",
+  "phone": "+1 (826) 490-3151",
+  "address": "717 Clove Road, Benson, New Jersey, 644",
+  "about": "Deserunt do in sunt id tempor Lorem Lorem non velit. Enim in nisi sint esse sint magna labore nulla do proident adipisicing laborum cupidatat sint. Consectetur esse do dolore mollit officia veniam id nostrud.\r\n",
+  "registered": "2016-09-27T06:26:13 +05:00",
+  "latitude": 20.517362,
+  "longitude": 82.411596,
+  "tags": [
+    "officia",
+    "cillum",
+    "pariatur",
+    "est",
+    "id",
+    "voluptate",
+    "enim"
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "name": "Salazar Stokes"
+    },
+    {
+      "id": 1,
+      "name": "Blair Stout"
+    },
+    {
+      "id": 2,
+      "name": "Angelina Wilkerson"
+    }
+  ]
+}
