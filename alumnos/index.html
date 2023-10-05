@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="charset=UTF-8" />
+	<title>Insertando desde AJAX</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="/Leccion - 03/js/lib/jquery-2.1.4.min.js"></script> 
+	<script src="/Leccion - 03/js/lib/TweenMax.min.js"></script> 
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="/Leccion - 03/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/Leccion - 03/css/styles.css">
+
+
+</head>
+<body>
+
+
+<div class="container">
+	
+	<h1>Peticiones Ajax, <small> jQuery </small></h1>
+	<hr>
+
+	<form action="" class="form-horizontal " id="frmData">
+
+		<label>Nombre</label>
+		<input type="text" name="txtnombre" class="form-control">
+
+		<label>Estado</label>
+
+		<select name="cmbestado" id="" class="form-control">
+			<option value="activo">Activo</option>
+			<option value="eliminado">Eliminado</option>
+		</select>
+
+		<br>
+		<button class="btn btn-primary" type="submit">Guardar</button>
+
+	</form>
+</div>
+	<script src="/alumnos/ajax.js"></script>
+
+
+</body>
+</html>
